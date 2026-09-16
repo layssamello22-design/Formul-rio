@@ -1,0 +1,111 @@
+css
+/* ==========================================================================
+   ESTILIZAÇÃO GERAL DO DOCUMENTO (RESET E CONFIGURAÇÃO BÁSICA)
+   ========================================================================== *//* Configura o corpo da página para usar uma fonte moderna, centralizar o conteúdo
+   e definir uma cor de fundo suave para não cansar os olhos. */
+body {
+    font-family: Verdana, sans-serif;/* Define uma fonte padrão e limpa */
+    background-color: #f4f7f6;/* Cor de fundo cinza bem claro */
+    color: #333333;/* Cor do texto em cinza escuro para dar bom contraste */
+    margin: 0;/* Remove as margens padrão do navegador */
+    padding: 20px;/* Adiciona um espaço de 20px nas bordas da tela */
+    display: flex;/* Usa Flexbox para alinhar o conteúdo */
+    justify-content: center;/* Centraliza o formulário horizontalmente */
+}/* ==========================================================================
+   ESTRUTURA DO FORMULÁRIO (CONTAINER PRINCIPAL)
+   ========================================================================== *//* Cria uma caixa branca organizada com sombra para destacar o formulário na tela. */
+form {
+    background-color: #ffffff;/* Fundo totalmente branco para o formulário */
+    padding: 20px;/* Espaçamento interno para os elementos não tocarem na borda */
+    /*border-radius:8px;/* Arredonda os cantos do formulário */
+    box-shadow: 4px 8px rgba(0,0,0,0.1);/* Cria uma sombra suave ao redor */
+    max-width: 600px;/* Define a largura máxima do formulário */
+    width: 100%;/* Faz o formulário ser responsivo em telas menores */
+}/* ==========================================================================
+   AGRUPAMENTOS (FIELDSET E LEGEND)
+   ========================================================================== *//* Define a estilização dos blocos que agrupam os campos relacionados. */
+fieldset {
+    border: 1px solid #cccccc;/* Linha de borda cinza fina */
+    border-radius: 6px;/* Cantos levemente arredondados na borda */
+    margin-bottom: 20px;/* Afasta um agrupamento do outro */
+    padding: 20px;/* Espaço interno dentro do bloco */
+}/* Estiliza o título de cada agrupamento para dar destaque visual. */
+legend {
+    font-weight: bold;/* Deixa o texto em negrito */
+    color: #6f42c1;/* Cor roxo para destacar as seções */
+    padding:010px;/* Espaçamento nas laterais para a linha não grudar no texto */
+}/* ==========================================================================
+   CAMPOS DE ENTRADA E RÓTULOS (DIVS, LABELS E INPUTS)
+   ========================================================================== *//* Organiza cada campo de forma vertical (um abaixo do outro). */
+form div {
+    margin-bottom: 15px;/* Dá um espaço de 15px abaixo de cada bloco de campo */
+}/* Alinha os rótulos textuais acima ou ao lado dos inputs. */
+label {
+    display: block;/* Faz o label ocupar a linha toda, jogando o input para baixo */
+    margin-bottom: 5px;/* Espaço entre o texto do label e o campo correspondente */
+    font-weight: 600;/* Texto ligeiramente negritado */
+}/* Estiliza todos os campos de texto, e-mail, telefone, data, select e textarea juntos. */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;/* Faz o campo ocupar toda a largura disponível na div */
+    padding: 10px;/* Espaço interno para o texto digitado não grudar nas bordas */
+    border: 1px solid #cccccc;/* Borda cinza clara padrão */
+    border-radius: 4px;/* Cantos suavemente arredondados */
+    box-sizing: border-box;/* Garante que o padding não aumente o tamanho final do campo */
+    font-size: 14px;/* Tamanho de letra agradável para leitura */
+}/* Efeito visual quando o estudante clica ou foca em um campo para digitar. */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0056b3;/* Muda a cor da borda para azul */
+    outline: none;/* Remove a linha de contorno padrão horrorosa do navegador */
+    box-shadow: 005px rgba(0,86,179,0.3);/* Adiciona um brilho azul suave ao redor do campo */
+}/* ==========================================================================
+   CAMPOS ESPECÍFICOS (RADIO BUTTONS E CHECKBOXES)
+   ========================================================================== *//* Garante que os botões de rádio e caixas de seleção não fiquem gigantes na tela. */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;/* Desfaz o width 100% aplicado antes */
+    display: inline-block;/* Permite que fiquem um ao lado do outro na mesma linha */
+    margin-right: 5px;/* Afasta a caixinha/bolinha do texto que vem depois dela */
+}/* Remove a quebra de linha obrigatória dos labels que acompanham radio ou checkbox. */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;/* Permite que o texto fique grudado ao lado do botão */
+    margin-bottom: 0;/* Zera a margem inferior para alinhar perfeitamente */
+    margin-right: 15px;/* Afasta o conjunto do próximo conjunto se houver */
+    font-weight: normal;/* Remove o negrito pesado nesses sub-rótulos */
+}/* ==========================================================================
+   BOTÕES DE AÇÃO (SUBMIT E RESET)
+   ========================================================================== *//* Estilização da base comum para todos os botões do formulário. */
+button {
+    padding: 10px20px;/* Espaçamento interno (altura e largura do botão) */
+    border: none;/* Remove as bordas feias padrões */
+    border-radius: 4px;/* Cantos arredondados */
+    font-size: 14px;/* Tamanho da fonte interna */
+    font-weight: bold;/* Texto em negrito */
+    cursor: pointer;/* Transforma a seta do mouse na mãozinha de clique */
+    transition: background-color0.2s ease;/* Transição suave de cor ao passar o mouse */
+    margin-right: 10px;/* Dá um espaço entre um botão e o outro */
+}/* Customização específica do botão de envio ("Concluir Cadastro"). */
+button[type="submit"] {
+    background-color: #28a745;/* Cor de fundo verde (indica sucesso/conclusão) */
+    color: #ffffff;/* Texto na cor branca */
+}/* Efeito ao passar o mouse por cima do botão verde */
+button[type="submit"]:hover {
+    background-color: #218838;/* Escurece levemente o verde */
+}/* Customização específica do botão de limpar ("Limpar Formulário"). */
+button[type="reset"] {
+    background-color: #dc3545;/* Cor de fundo vermelha (indica cancelamento/limpeza) */
+    color: #ffffff;/* Texto na cor branca */
+}/* Efeito ao passar o mouse por cima do botão vermelho */
+button[type="reset"]:hover {
+    background-color: #c82333;/* Escurece levemente o vermelho */
+}
+
