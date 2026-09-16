@@ -1,0 +1,22 @@
+/*ELEMENTS*/
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+header {
+    background-color:black;
+    color:cadetblue;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}

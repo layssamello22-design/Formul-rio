@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivelamento - Formulário</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+       <h1 class="nav-brand">Loja do Tads</h1>
+       </nav>
+    </header>
+    
+    <main>
+        <section id="signup">
+            <h2>Cadrastro</h2>
+            <form action="obrigado.html">
+                <div>
+                    <label for="ctrl-name">Nome:</label>
+                    <input type="text" name="nome" id="name" placeholder="Digite seu Nome" required>
+                </div>
+                <div>
+                    <label for="ctrl-email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu Email" required>
+                </div>
+                <div>
+                    <label for="ctrl-senha">Senha:</label>
+                    <input type="password" name="senha" id="ctrl-senha" placeholder="Digite sua Senha" required>
+                </div>
+                <div>
+                    <h1>Cidade</h1>
+                    <label for="ctrl-city">Cidade:</label>
+                    <select name="city" id="ctrl-city" required>
+                        <option value="">Selecione uma cidade</option>
+                        <option value= 1>Curitiba</option>
+                        <option value="Porto Alegre">Porto Alegre</option>
+                        <option value="São Paulo">São Paulo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ctrl-escolaridade">Escolaridade:</label>
+                    <div>
+                        <label for="ensino-fundamental">Ensino Fundamental</label>
+                        <input type="radio" name="escolaridade" id="ctrl-escolaridade" value="ensino-fundamental" required>
+                        <label for="ensino-medio">Ensino Médio</label>
+                        <input type="radio" name="escolaridade" id="ctrl-escolaridade" value="ensino-medio" required>
+                        <label for="ensino-graduacao">Graduação</label>
+                        <input type="radio" name="escolaridade" id="ctrl-graduação" value="graduação" required>
+                    </div>
+                    <div>
+                        <label for="ctrl-linguagens">Linguagem que você conhece</label>
+                        <div>
+                            <input type="checkbox" name="linguagens" id="ctrl-linguagens-java" value="Java">
+                            <label for="ctrl-linguagens-java">Java</label>
+                            <input type="checkbox" name="linguagens" id="ctrl-linguagens-css" value="css">
+                            <label for="ctrl-linguagens-css">CSS</label>
+                            <input type="checkbox" name="linguagens" id="ctrl-linguagens-javascript" value="javascript">
+                            <label for="ctrl-linguagens-javacript">JavaScript</label>
+                            <input type="checkbox" name="linguagens" id="ctrl-linguagens-csharp" value="javascript">
+                            <label for="ctrl-linguagens-javascript">C#</label>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+                 <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
