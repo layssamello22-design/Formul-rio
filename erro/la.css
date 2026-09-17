@@ -3,10 +3,10 @@ css
    ESTILIZAÇÃO GERAL DO DOCUMENTO (RESET E CONFIGURAÇÃO BÁSICA)
    ========================================================================== *//* Configura o corpo da página para usar uma fonte moderna, centralizar o conteúdo
    e definir uma cor de fundo suave para não cansar os olhos. */
-main {
+/*main {
     width: 100%;
     max-width: 600px;
-}
+}*/
 
 
 
