@@ -153,3 +153,31 @@ button[type="reset"] {
 button[type="reset"]:hover {
     background-color: #c82333;/* Escurece levemente o vermelho */
 }
+
+/* ==========================================================================
+   ESTADO DE ERRO (VALIDAÇÃO VIA JAVASCRIPT)
+   ========================================================================== */
+
+/* Esta classe será colocada no input pelo JS caso o dado seja inválido */
+.input-error {
+    border-color: #dc3545 !important; /* Força a borda a ficar vermelha (cor de erro) */
+    background-color: #fff5f5;        /* Aplica um fundo rosa bem claro de alerta */
+}
+
+/* Garante um brilho vermelho quando o usuário clicar no campo que está com erro */
+.input-error:focus {
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.4) !important;
+}
+
+/* ==========================================================================
+   TEXTO DE ERRO DINÂMICO (VIA JAVASCRIPT)
+   ========================================================================== */
+
+/* Estiliza o elemento de texto inserido dinamicamente pelo JS */
+.error-message {
+    color: #dc3545;            /* Cor vermelha padrão de erro */
+    font-size: 12px;           /* Tamanho reduzido para não competir com o rótulo */
+    font-weight: bold;         /* Destaca o texto em negrito */
+    display: block;            /* Força o texto a quebrar a linha e ficar abaixo do input */
+    margin-top: 5px;           /* Dá um pequeno espaçamento entre a caixa e o texto */
+}
